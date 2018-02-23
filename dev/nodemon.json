@@ -1,7 +1,0 @@
-{
-    "ignore": [ "bundle.min.js" ],
-    "execMap": {
-        "js": "webpack --config ./dev/webpack.config.js && babel-node"
-    },
-    "watch": "./src"
-}
