@@ -1,5 +1,3 @@
-console.log("passou aqui");
-
 module.exports = {
   "env": {
     "browser": true,

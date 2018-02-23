@@ -1,3 +1,8 @@
 'use strict'
 
-console.log(require("./dist/index.js"));
+const _module = require("./dist/index");
+
+require("./dist/style.css");
+
+
+module.exports = _module;

@@ -5,14 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rm -r ./dev/build && parcel ./dev/index.html -d ./dev/build -p 8888",
+    "dev": "rm -r ./dev/build/* && nodemon --watch src/**/*.js --watch src/**/*.styl --watch src --ignore dev/ --exec \"gulp css && parcel ./dev/index.html -d ./dev/build -p 8888\"",
     "build": "gulp build"
   },
   "author": "theVelops <contato@thevelops.com> (http://www.thevelops.com)",
   "license": "ISC",
   "dependencies": {
     "morgan": "^1.9.0",
-    "react": "^16.2.0"
+    "nuka-carousel": "^3.0.1",
+    "react": "^16.2.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -29,7 +31,9 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
     "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^3.9.2",
     "gulp-clean-dest": "^0.2.0",
+    "gulp-concat-css": "^3.0.0",
     "gulp-eslint": "^4.0.2",
     "gulp-react": "^3.1.0",
     "gulp-react-bundle": "^0.1.11",
