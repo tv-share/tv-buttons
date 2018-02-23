@@ -11,10 +11,8 @@
   "author": "theVelops <contato@thevelops.com> (http://www.thevelops.com)",
   "license": "ISC",
   "dependencies": {
-    "morgan": "^1.9.0",
-    "nuka-carousel": "^3.0.1",
-    "react": "^16.2.0",
-    "slick-carousel": "^1.8.1"
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

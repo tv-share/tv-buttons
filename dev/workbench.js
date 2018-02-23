@@ -14,7 +14,7 @@ class Workbench extends React.Component {
     render() {
         return (
             <section className="test-area">
-                <Example />
+                <Example label="Exemplo" />
             </section>
         )
     }
