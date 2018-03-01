@@ -2,20 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../src/style/_index";
 
-import { Example } from "../src/index";
+import { ToggleButton } from "../src/index";
 
 class Workbench extends React.Component {
 
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            isEnabled: false
+        };
     }
 
     render() {
         return (
             <section className="test-area">
-                <Example label="Exemplo" />
+                <ToggleButton onClick={()=>this.setState({isEnabled: !this.state.isEnabled})} isEnabled={this.state.isEnabled}/>
             </section>
         )
     }

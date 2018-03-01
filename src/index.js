@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import ToggleButton from "./lib/ToggleButton";
 
-export { Example };
+export { ToggleButton };
