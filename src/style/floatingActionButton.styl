@@ -1,0 +1,32 @@
+.floatingActionButton
+    position absolute
+    width 50px
+    height 50px
+    background-color #DD106D
+    border-radius 50%
+    display inline-block
+    cursor pointer
+    font-size 15px
+    border-radius 50%
+    transition: all .2s ease-in-out
+    &.-bottom-right
+        right 1em
+        bottom 1em
+    &.-bottom-left
+        left 1em
+        bottom 1em
+    &.-top-right
+        right 1em
+        top 1em
+    &.-top-left
+        left 1em
+        top 1em
+    &:hover
+        background-color #E8356E
+    &:active
+        transform: scale(0.9)
+    > img
+        height 50%
+        width 50%
+        padding-left 25%
+        padding-top 25%

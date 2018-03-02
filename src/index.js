@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import FloatingActionButton from "./lib/FloatingActionButton";
 
-export { Example };
+export { FloatingActionButton };
