@@ -1,3 +1,3 @@
-import Example from "./lib/Example";
+import Button from "./lib/Button";
 
-export { Example };
+export { Button };
