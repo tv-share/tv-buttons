@@ -12,6 +12,6 @@ _A simple button._
 --- | :---: | ---
 label | string or node | (required)
 className | string | 
-onClick | func | The function to be called whenever the button is pressed
+onClick | func | 
 ## Development
 For delevepment checkout [this section](https://github.com/shareThevelopment/tv-handbook/Development).
