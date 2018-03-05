@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../src/style/_index";
 
-import { ToggleButton } from "../src/index";
+import { Switch } from "../src/index";
 
 class Workbench extends React.Component {
 
@@ -17,7 +17,7 @@ class Workbench extends React.Component {
     render() {
         return (
             <section className="test-area">
-                <ToggleButton onClick={()=>this.setState({isEnabled: !this.state.isEnabled})} isEnabled={this.state.isEnabled}/>
+                <Switch onClick={()=>this.setState({isEnabled: !this.state.isEnabled})} isEnabled={this.state.isEnabled}/>
             </section>
         )
     }

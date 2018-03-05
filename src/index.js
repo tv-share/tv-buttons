@@ -1,3 +1,3 @@
-import ToggleButton from "./lib/ToggleButton";
+import Switch from "./lib/Switch";
 
-export { ToggleButton };
+export { Switch };
