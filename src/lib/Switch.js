@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 */
 const Switch = ({ className, isEnabled, onClick } ) => {
 	return (
-		<div className={`switch ${className ? className : ""}`}>
+		<div className={`tv-switch ${className ? className : ""}`}>
 			<div className={`box ${isEnabled ? "-on" : "-off"}`} onClick={onClick}>
             	<div className={`circle ${isEnabled ? "-on" : "-off"}`}/>
 			</div>

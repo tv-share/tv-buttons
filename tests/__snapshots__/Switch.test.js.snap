@@ -2,7 +2,7 @@
 
 exports[`renders correctely on OFF position 1`] = `
 <div
-  className="switch "
+  className="tv-switch "
 >
   <div
     className="box -off"
@@ -17,7 +17,7 @@ exports[`renders correctely on OFF position 1`] = `
 
 exports[`renders correctely on ON position 1`] = `
 <div
-  className="switch "
+  className="tv-switch "
 >
   <div
     className="box -on"
