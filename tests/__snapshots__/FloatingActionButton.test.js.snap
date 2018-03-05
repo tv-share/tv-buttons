@@ -2,7 +2,7 @@
 
 exports[`renders correctely 1`] = `
 <div
-  className="floatingActionButton -bottom-right "
+  className="tv-floating-action-button -bottom-right "
   icon="test"
   onClick={[Function]}
 >
