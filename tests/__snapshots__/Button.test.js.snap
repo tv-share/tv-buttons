@@ -2,7 +2,7 @@
 
 exports[`renders correctely 1`] = `
 <button
-  className="button "
+  className="tv-button "
   disabled={undefined}
   onClick={[Function]}
   type={undefined}
