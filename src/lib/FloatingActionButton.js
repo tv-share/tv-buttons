@@ -12,7 +12,7 @@ import PropTypes from "prop-types";
 */
 const FloatingActionButton = ({ className, icon, onClick, position="-bottom-right" }) => {
 	return (
-		<div className={`floatingActionButton ${position} ${className ? className : ""}`} icon={icon} onClick={onClick}>
+        <div className={`tv-floating-action-button ${position} ${className ? className : ""}`} icon={icon} onClick={onClick}>
             <img src={icon}/>
 		</div>
 	);
