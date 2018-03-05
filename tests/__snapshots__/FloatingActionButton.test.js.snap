@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctely 1`] = `
+<div
+  className="floatingActionButton -bottom-right "
+  icon="test"
+  onClick={[Function]}
+>
+  <img
+    src="test"
+  />
+</div>
+`;
