@@ -5,10 +5,18 @@ import { FloatingActionButton } from "../src/index";
 const fn = () => { };
 const icon = "test";
 
-it('renders correctely', () => {
+it('renders absolute', () => {
 	const component = renderer.create(
 		<FloatingActionButton onClick={fn} icon={icon}/>
 	);
 
 	expect(component.toJSON()).toMatchSnapshot();
+});
+
+it('renders fixed', () => {
+    const component = renderer.create(
+        <FloatingActionButton fixed onClick={fn} icon={icon} />
+    );
+
+    expect(component.toJSON()).toMatchSnapshot();
 });

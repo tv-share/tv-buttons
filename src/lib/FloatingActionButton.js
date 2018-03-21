@@ -7,22 +7,24 @@ import PropTypes from "prop-types";
 * @param  {String}    	className is a string that will be attached to the select input's className (optional)
 * @param  {String}      icon defines the path of the icon to be displayed inside the button
 * @param  {Function}    onClick defines a function to be called whenever the button is pressed
-* @param  {String}      position defines the relative position of the button
+* @param  {String}      fixed defines if button should be fixed in the bottom right of the screen
+* @param  {Object}      events is an object with one or more React Synthetic Events
 * @return {JSX}         SelectInput Component
 */
-const FloatingActionButton = ({ className, icon, onClick, position="-bottom-right" }) => {
+const FloatingActionButton = ({ className, icon, onClick, fixed = false, events = {} }) => {
 	return (
-        <div className={`tv-floating-action-button ${position} ${className ? className : ""}`} icon={icon} onClick={onClick}>
+        <div className={`tv-floating-action-button ${fixed ? '-fixed' : ''} ${className ? className : ""}`} icon={icon} onClick={onClick}>
             <img src={icon}/>
 		</div>
 	);
 };
 
 FloatingActionButton.propTypes = {
-    className: PropTypes.string,
     icon: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
-    position: PropTypes.string
+    className: PropTypes.string,
+    fixed: PropTypes.bool,
+    events: PropTypes.object
 };
 
 export default FloatingActionButton;
