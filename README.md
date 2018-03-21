@@ -4,6 +4,21 @@ A collection of menu components
 ## Components
 
 ## Docs
+
+- Button
+
+_A simple button._
+
+**Field** | **Type** | **Description**
+--- | :---: | ---
+label | string or node | (required)
+className | string | 
+onClick | func |
+disabled | bool |
+type | string | _button_, _submit_ or _reset_. default: _button_
+value | string |
+events | object | object with one or more [React Syntethic Events](https://reactjs.org/docs/events.html)
+
 - Floating Action Button
 
 _A floating action button._
