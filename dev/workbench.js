@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../src/style/_index";
 
+import SwitchButton from "../src/lib/SwitchButton";
+
 class Workbench extends React.Component {
 
     constructor(props) {
@@ -15,6 +17,7 @@ class Workbench extends React.Component {
     render() {
         return (
             <section className="test-area">
+                <SwitchButton />
             </section>
         )
     }
