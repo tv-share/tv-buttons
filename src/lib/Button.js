@@ -11,9 +11,15 @@ import PropTypes from "prop-types";
 * @param  {String}    	value specifies an initial value for the button
 * @return {JSX}         Button Component
 */
-const Button = ({ className, disabled, label, onClick, type, value }) => {
+const Button = ({ className, disabled, label, onClick, type = "button", value, events = {} }) => {
 	return (
-        <button className={`tv-button ${className ? className : ""}`} disabled ={disabled} onClick={onClick} type={type} value={value}>
+        <button
+            className={`tv-button ${className ? className : ""}`}
+            disabled={disabled}
+            onClick={onClick}
+            type={type}
+            value={value}
+            {...events}>
             {label || ""}
 		</button>
 	);
@@ -22,7 +28,11 @@ const Button = ({ className, disabled, label, onClick, type, value }) => {
 Button.propTypes = {
     label: PropTypes.string.isRequired,
     className: PropTypes.string,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    disabled: PropTypes.bool,
+    type: PropTypes.string,
+    value: PropTypes.string,
+    events: PropTypes.object
 };
 
 export default Button;

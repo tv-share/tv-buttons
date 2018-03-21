@@ -12,6 +12,11 @@ _A simple button._
 --- | :---: | ---
 label | string or node | (required)
 className | string | 
-onClick | func | 
+onClick | func |
+disabled | bool |
+type | string | __button__, __submit__ or __reset__. default: __submit__
+value | string |
+events | object | Object with one or more [React Syntethic Events](https://reactjs.org/docs/events.html)
+
 ## Development
 For delevepment checkout [this section](https://github.com/shareThevelopment/tv-handbook/Development).
