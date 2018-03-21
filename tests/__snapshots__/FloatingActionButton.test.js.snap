@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders absolute 1`] = `
+<div
+  className="tv-floating-action-button  "
+  icon="test"
+  onClick={[Function]}
+>
+  <img
+    src="test"
+  />
+</div>
+`;
+
+exports[`renders fixed 1`] = `
+<div
+  className="tv-floating-action-button -fixed "
+  icon="test"
+  onClick={[Function]}
+>
+  <img
+    src="test"
+  />
+</div>
+`;
