@@ -26,7 +26,7 @@ const Button = ({ className, disabled, label, onClick, type = "button", value, e
 };
 
 Button.propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
     className: PropTypes.string,
     onClick: PropTypes.func,
     disabled: PropTypes.bool,
