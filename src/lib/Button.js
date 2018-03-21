@@ -9,6 +9,7 @@ import PropTypes from "prop-types";
 * @param  {Function}    onClick defines a function to be called whenever the button is pressed
 * @param  {String}    	type defines they type of the button (button, reset or submit)
 * @param  {String}    	value specifies an initial value for the button
+* @param {Object}       A object with one or more React Synthetic Events
 * @return {JSX}         Button Component
 */
 const Button = ({ className, disabled, label, onClick, type = "button", value, events = {} }) => {
