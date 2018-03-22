@@ -8,11 +8,11 @@ const concat = require('gulp-concat-css');
 const cleanCSS = require('gulp-clean-css');
 const pump = require('pump');
 
-gulp.task('build', ['prebuild'], () => {
+gulp.task('build', ['lint:fix'], () => {
     gulp.start(['js', 'css']);
 });
 
-gulp.task('prebuild', (cb) => {
+gulp.task('lint:fix', (cb) => {
     const tasks = [
         gulp.src('src/**/*.js'),
         eslint({ fix: true }),

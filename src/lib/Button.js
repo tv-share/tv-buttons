@@ -14,26 +14,26 @@ import PropTypes from "prop-types";
 */
 const Button = ({ className, disabled, label, onClick, type = "button", value, events = {} }) => {
 	return (
-        <button
-            className={`tv-button ${className ? className : ""}`}
-            disabled={disabled}
-            onClick={onClick}
-            type={type}
-            value={value}
-            {...events}>
-            {label || ""}
+		<button
+			className={`tv-button ${className ? className : ""}`}
+			disabled={disabled}
+			onClick={onClick}
+			type={type}
+			value={value}
+			{...events}>
+			{label || ""}
 		</button>
 	);
 };
 
 Button.propTypes = {
-    label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-    className: PropTypes.string,
-    onClick: PropTypes.func,
-    disabled: PropTypes.bool,
-    type: PropTypes.string,
-    value: PropTypes.string,
-    events: PropTypes.object
+	label: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+	className: PropTypes.string,
+	onClick: PropTypes.func,
+	disabled: PropTypes.bool,
+	type: PropTypes.string,
+	value: PropTypes.string,
+	events: PropTypes.object
 };
 
 export default Button;
