@@ -12,11 +12,11 @@ A collection of button components
 **Field** | **Type** | **Description**
 --- | :---: | ---
 label | string or node | (required)
+onClick | func | (required)
 className | string | 
-onClick | func |
 disabled | bool |
-type | string | _button_, _submit_ or _reset_. default: _button_
 value | string |
+type | string | _button_, _submit_ or _reset_. default: _button_
 events | object | object with one or more [React Syntethic Events](https://reactjs.org/docs/events.html)
 
 ### Floating Action Button
@@ -34,8 +34,8 @@ events | objects | object with one or more [React Synthetic Events](https://reac
 **Field** | **Type** | **Description**
 --- | :---: | ---
 onClick | func | (required)
+enabled | boolean | (required)
 className | string | 
-enabled | boolean |
 onLabel | string | label for the ON position (right)
 offLabel | string | label for the OFF position (left)
 
