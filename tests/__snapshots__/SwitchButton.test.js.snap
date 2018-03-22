@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctely on OFF position 1`] = `
+<div
+  className="tv-switch-btn"
+>
+  <label>
+    
+    <input
+      checked={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="tv-lever"
+    />
+    
+  </label>
+</div>
+`;
+
+exports[`renders correctely on ON position 1`] = `
+<div
+  className="tv-switch-btn"
+>
+  <label>
+    
+    <input
+      checked={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <span
+      className="tv-lever"
+    />
+    
+  </label>
+</div>
+`;

@@ -2,20 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "../src/style/_index";
 
-import { Button } from "../src/index";
+import SwitchButton from "../src/lib/SwitchButton";
 
 class Workbench extends React.Component {
 
     constructor(props) {
         super(props);
 
-        this.state = {};
+        this.state = {
+            enabled: false
+        };
     }
 
     render() {
         return (
             <section className="test-area">
-                <Button label="Exemplo" onClick={()=>console.log("Click")}/>
+                <SwitchButton enabled={this.state.enabled} onClick={() => this.setState({ enabled: !this.state.enabled })}/>
             </section>
         )
     }

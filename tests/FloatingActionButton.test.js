@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { FloatingActionButton } from "../src/index";
+import FloatingActionButton from "../src/lib/FloatingActionButton";
 
 const fn = () => { };
 const icon = "test";
