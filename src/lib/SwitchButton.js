@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "../style/switchButton.styl";
+
 /**
 * Renders the Switch Component
 * @param  {String}    	className is a string that will be attached to the select input's className (optional)

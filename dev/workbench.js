@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "../src/style/_index";
 
 import SwitchButton from "../src/lib/SwitchButton";
 
