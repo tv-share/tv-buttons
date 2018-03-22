@@ -16,7 +16,7 @@ gulp.task('pre-build', ['clean', 'lint:fix']);
 
 gulp.task('clean', (cb) => {
     const tasks = [
-        gulp.src(['lib/', 'style/'], { read: false }),
+        gulp.src(['dist/'], { read: false }),
         clean()
     ];
 
@@ -37,10 +37,10 @@ gulp.task('lint:fix', (cb) => {
 
 gulp.task('js', (cb) => {
     const tasks = [
-      gulp.src(['src/**/*.js']),
+      gulp.src(['src/*.js']),
       babel(),
       uglify(),
-      gulp.dest('./')
+      gulp.dest('dist')
     ];
   
     pump(tasks, cb);
@@ -48,10 +48,10 @@ gulp.task('js', (cb) => {
 
 gulp.task('css', (cb) => {
     const tasks = [
-        gulp.src(['src/**/*.styl']),
+        gulp.src(['src/style/*.styl']),
         stylus(),
         cleanCSS({compatibility: 'ie8'}),
-        gulp.dest('./')
+        gulp.dest('dist/style')
     ];
 
     pump(tasks, cb);
