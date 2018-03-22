@@ -9,7 +9,7 @@ A collection of button components
 ## Docs
 ### Button
 ```javascript
-import Button from "path/to/node_modules/tv-buttons/lib/Button";
+import Button from "tv-buttons/dist/Button";
 ```
 
 **Field** | **Type** | **Description**
@@ -24,7 +24,7 @@ events | object | object with one or more [React Syntethic Events](https://react
 
 ### Floating Action Button
 ```javascript
-import FloatingActionButton from "path/to/node_modules/tv-buttons/lib/FloatingActionButton";
+import FloatingActionButton from "tv-buttons/dist/FloatingActionButton";
 ```
 
 **Field** | **Type** | **Description**
@@ -37,7 +37,7 @@ events | objects | object with one or more [React Synthetic Events](https://reac
 
 ### Switch Button
 ```javascript
-import SwitchButton from "path/to/node_modules/tv-buttons/lib/SwitchButton";
+import SwitchButton from "tv-buttons/dist/SwitchButton";
 ```
 
 **Field** | **Type** | **Description**

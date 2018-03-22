@@ -1,5 +1,4 @@
 node_modules/
-lib/
-style/
+dist/
 .cache/
 dev/build

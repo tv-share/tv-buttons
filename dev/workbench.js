@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import SwitchButton from "../src/lib/SwitchButton";
+import SwitchButton from "../src/SwitchButton";
 
 class Workbench extends React.Component {
 
