@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctely 1`] = `
+<button
+  className="tv-button "
+  disabled={undefined}
+  onClick={[Function]}
+  type="button"
+  value={undefined}
+>
+  Exemplo
+</button>
+`;
