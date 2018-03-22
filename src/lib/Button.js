@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import "../style/button";
+
 /**
 * Renders the Button Component
 * @param  {String}    	className is a string that will be attached to the component's className (optional)
