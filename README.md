@@ -8,6 +8,9 @@ A collection of button components
 
 ## Docs
 ### Button
+```javascript
+import Button from "path/to/node_modules/tv-buttons/lib/Button";
+```
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
@@ -20,6 +23,9 @@ type | string | _button_, _submit_ or _reset_. default: _button_
 events | object | object with one or more [React Syntethic Events](https://reactjs.org/docs/events.html)
 
 ### Floating Action Button
+```javascript
+import FloatingActionButton from "path/to/node_modules/tv-buttons/lib/FloatingActionButton";
+```
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
@@ -30,6 +36,9 @@ fixed | bool | fixes the button in the bottom right corner of screen. default: _
 events | objects | object with one or more [React Synthetic Events](https://reactjs.org/docs/events.html)
 
 ### Switch Button
+```javascript
+import SwitchButton from "path/to/node_modules/tv-buttons/lib/SwitchButton";
+```
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
