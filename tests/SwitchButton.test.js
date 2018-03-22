@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import { Switch } from "../src/index";
+import SwitchButton from '../src/lib/SwitchButton';
 
 const fn = () => { };
 
 it('renders correctely on ON position', () => {
 	const component = renderer.create(
-		<Switch isEnabled={true} onClick={() => console.log("ON")}/>
+		<SwitchButton enabled={true} onClick={fn}/>
 	);
 
 	expect(component.toJSON()).toMatchSnapshot();
@@ -15,7 +15,7 @@ it('renders correctely on ON position', () => {
 
 it('renders correctely on OFF position', () => {
 	const component = renderer.create(
-		<Switch isEnabled={false} onClick={() => console.log("OFF")}/>
+		<SwitchButton enabled={false} onClick={fn}/>
 	);
 
 	expect(component.toJSON()).toMatchSnapshot();

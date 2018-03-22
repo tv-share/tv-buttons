@@ -24,8 +24,9 @@ _A simple switch button._
 --- | :---: | ---
 onClick | func | (required)
 className | string | 
-isEnabled | boolean |
-events | objects | object with one or more [React Synthetic Events](https://reactjs.org/docs/events.html)
+enabled | boolean |
+onLabel | string | label for the ON position (right)
+offLabel | string | label for the OFF position (left)
 
 - Floating Action Button
 _A floating action button._

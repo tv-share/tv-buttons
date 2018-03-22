@@ -10,14 +10,14 @@ class Workbench extends React.Component {
         super(props);
 
         this.state = {
-            isEnabled: false
+            enabled: false
         };
     }
 
     render() {
         return (
             <section className="test-area">
-                <SwitchButton />
+                <SwitchButton enabled={this.state.enabled} onClick={() => this.setState({ enabled: !this.state.enabled })}/>
             </section>
         )
     }
