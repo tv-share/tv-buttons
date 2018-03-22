@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const clean = require('gulp-clean-dest');
+const clean = require('gulp-clean');
 const uglify = require("gulp-uglify");
 const babel = require("gulp-babel");
 const stylus = require('gulp-stylus');
@@ -8,8 +8,19 @@ const concat = require('gulp-concat-css');
 const cleanCSS = require('gulp-clean-css');
 const pump = require('pump');
 
-gulp.task('build', ['lint:fix'], () => {
+gulp.task('build', ['pre-build'], () => {
     gulp.start(['js', 'css']);
+});
+
+gulp.task('pre-build', ['clean', 'lint:fix']);
+
+gulp.task('clean', (cb) => {
+    const tasks = [
+        gulp.src(['lib/', 'style/'], { read: false }),
+        clean()
+    ];
+
+    pump(tasks, cb);
 });
 
 gulp.task('lint:fix', (cb) => {
@@ -18,8 +29,7 @@ gulp.task('lint:fix', (cb) => {
         eslint({ fix: true }),
         eslint.format(),
         eslint.failAfterError(),
-        gulp.dest('src'),
-        clean('dist'),
+        gulp.dest('src')
     ];
 
     pump(tasks, cb);
@@ -30,7 +40,7 @@ gulp.task('js', (cb) => {
       gulp.src(['src/**/*.js']),
       babel(),
       uglify(),
-      gulp.dest('dist')
+      gulp.dest('./')
     ];
   
     pump(tasks, cb);
@@ -41,7 +51,7 @@ gulp.task('css', (cb) => {
         gulp.src(['src/**/*.styl']),
         stylus(),
         cleanCSS({compatibility: 'ie8'}),
-        gulp.dest('./dist')
+        gulp.dest('./')
     ];
 
     pump(tasks, cb);
