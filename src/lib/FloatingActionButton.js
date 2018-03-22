@@ -13,18 +13,18 @@ import PropTypes from "prop-types";
 */
 const FloatingActionButton = ({ className, icon, onClick, fixed = false, events = {} }) => {
 	return (
-        <div className={`tv-floating-action-button ${fixed ? '-fixed' : ''} ${className ? className : ""}`} icon={icon} onClick={onClick}>
-            <img src={icon}/>
+		<div className={`tv-floating-action-button ${fixed ? "-fixed" : ""} ${className ? className : ""}`} icon={icon} onClick={onClick}>
+			<img src={icon}/>
 		</div>
 	);
 };
 
 FloatingActionButton.propTypes = {
-    icon: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
-    className: PropTypes.string,
-    fixed: PropTypes.bool,
-    events: PropTypes.object
+	icon: PropTypes.string.isRequired,
+	onClick: PropTypes.func.isRequired,
+	className: PropTypes.string,
+	fixed: PropTypes.bool,
+	events: PropTypes.object
 };
 
 export default FloatingActionButton;
