@@ -37,7 +37,7 @@ gulp.task('lint:fix', (cb) => {
 
 gulp.task('js', (cb) => {
     const tasks = [
-      gulp.src(['src/*.js']),
+      gulp.src(['src/**/*.js']),
       babel(),
       uglify(),
       gulp.dest('dist')
@@ -48,10 +48,10 @@ gulp.task('js', (cb) => {
 
 gulp.task('css', (cb) => {
     const tasks = [
-        gulp.src(['src/style/*.styl']),
+        gulp.src(['src/**/*.styl']),
         stylus(),
         cleanCSS({compatibility: 'ie8'}),
-        gulp.dest('dist/style')
+        gulp.dest('dist')
     ];
 
     pump(tasks, cb);
