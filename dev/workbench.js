@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import SwitchButton from "../src/SwitchButton";
+import FloatingActionButton from "../src/FloatingActionButton";
 
 class Workbench extends React.Component {
 
@@ -16,7 +16,7 @@ class Workbench extends React.Component {
     render() {
         return (
             <section className="test-area">
-                <SwitchButton enabled={this.state.enabled} onClick={() => this.setState({ enabled: !this.state.enabled })}/>
+                <FloatingActionButton label="Botão" onClick={() => console.log("clicou")}/>
             </section>
         )
     }

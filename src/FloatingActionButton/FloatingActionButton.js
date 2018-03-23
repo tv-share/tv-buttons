@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import "./style/floatingActionButton";
 /**
 * Renders the SelectInput Component
 * @param  {String}    	className is a string that will be attached to the select input's className (optional)
@@ -11,6 +10,7 @@ import "./style/floatingActionButton";
 * @param  {Object}      events is an object with one or more React Synthetic Events
 * @return {JSX}         SelectInput Component
 */
+
 const FloatingActionButton = ({ className, icon, onClick, fixed = false, events = {} }) => {
 	return (
 		<div className={`tv-floating-action-button ${fixed ? "-fixed" : ""} ${className ? className : ""}`} icon={icon} onClick={onClick}>

@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import SwitchButton from '../src/lib/SwitchButton';
+import SwitchButton from '../src/SwitchButton/SwitchButton';
 
 const fn = () => { };
 
