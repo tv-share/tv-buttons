@@ -1,6 +1,10 @@
 # tv-buttons
 
 A collection of button components
+```bash
+// install
+npm i -S @thevelops/tv-buttons
+```
 ## Components
 - [Button](#button)
 - [Floating Action Button](#floating-action-button)
