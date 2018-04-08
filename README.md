@@ -13,8 +13,12 @@ npm i -S @thevelops/tv-buttons
 ## Docs
 ### Button
 ```javascript
-import Button from "tv-buttons/dist/Button";
+import Button from "tv-buttons/dist/lib/Button";
 ```
+```css
+@import "path/to/node_modules/@thevelops/tv-buttons/dist/styles/button.styl"
+```
+
 
 **Field** | **Type** | **Description**
 --- | :---: | ---
@@ -28,7 +32,10 @@ events | object | object with one or more [React Syntethic Events](https://react
 
 ### Floating Action Button
 ```javascript
-import FloatingActionButton from "tv-buttons/dist/FloatingActionButton";
+import FloatingActionButton from "tv-buttons/dist/lib/FloatingActionButton";
+```
+```css
+@import "path/to/node_modules/@thevelops/tv-buttons/dist/styles/floatActionButton.styl"
 ```
 
 **Field** | **Type** | **Description**
@@ -41,7 +48,10 @@ events | objects | object with one or more [React Synthetic Events](https://reac
 
 ### Switch Button
 ```javascript
-import SwitchButton from "tv-buttons/dist/SwitchButton";
+import SwitchButton from "tv-buttons/dist/lib/SwitchButton";
+```
+```css
+@import "path/to/node_modules/@thevelops/tv-buttons/dist/styles/switchButton.styl"
 ```
 
 **Field** | **Type** | **Description**
