@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Button from "../src/Button/Button";
+import Button from "../src/lib/Button";
 
 const fn = () => { };
 
