@@ -14,10 +14,10 @@ const SwitchButton = ({ className, enabled, onClick, onLabel = "", offLabel = ""
 	return (
 		<div className="tv-switch-btn">
 			<label>
-				{offLabel}
+                {offLabel ? <div className="left">{offLabel}</div> : null}
 				<input checked={enabled} onChange={onClick} type="checkbox" />
 				<span className="tv-lever"></span>
-				{onLabel}
+                {onLabel ? <div className="right">{onLabel}</div> : null }
 			</label>
 		</div>
 	);

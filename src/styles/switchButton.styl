@@ -6,11 +6,22 @@ div.tv-switch-btn *
     -ms-user-select none
     user-select none
 
+
 div.tv-switch-btn
+    font-family "Roboto", "arial", "sans-serif"
     label 
         cursor pointer
         font-size .8rem
-        color #9e9e9e
+        color #757575
+
+        > div
+            display inline-block
+
+            &.left
+                margin-right 10px
+
+            &.right
+                margin-left 10px
 
         input[type="checkbox"]
             opacity 0
@@ -20,7 +31,7 @@ div.tv-switch-btn
             padding 0
             margin 0
             line-height normal
-            -webkit-appearance checkbox
+            appearance checkbox
 
         .tv-lever
             content ""
@@ -30,9 +41,8 @@ div.tv-switch-btn
             height 14px
             background-color rgba(0, 0, 0, .38)
             border-radius 15px
-            -webkit-transition background .3s ease
+            transition background .3s ease
             vertical-align middle
-            margin 0 10px
             top -2px
 
             &:before
